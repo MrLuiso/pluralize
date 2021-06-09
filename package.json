@@ -7,9 +7,6 @@
   "main": "./dist/pluralize.cjs",
   "module": "./dist/pluralize.module.js",
   "unpkg": "./dist/pluralize.umd.js",
-  "files": [
-    "pluralize.js"
-  ],
   "scripts": {
     "test-spec": "mocha -R spec --bail",
     "test-cov": "istanbul cover node_modules/ts-mocha/bin/ts-mocha -- -R spec --bail",
