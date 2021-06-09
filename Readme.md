@@ -9,25 +9,33 @@
 
 > Pluralize and singularize any word.
 
+This was forked from https://github.com/plurals/pluralize.
+It was refactored into TS and there is now a build step added. Everything else remains the same.
+
 ## Installation
 
 ```
 npm install pluralize --save
 yarn add pluralize
-bower install pluralize --save
+```
+
+### Node (ES2015 Module)
+
+```javascript
+import pluralize from 'pluralize';
 ```
 
 ### Node
 
 ```javascript
-var pluralize = require('pluralize');
+const pluralize = require('pluralize');
 ```
 
 ### AMD
 
 ```javascript
 define(function (require, exports, module) {
-  var pluralize = require('pluralize');
+  const pluralize = require('pluralize');
 });
 ```
 
