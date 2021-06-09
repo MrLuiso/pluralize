@@ -1,8 +1,9 @@
 {
   "name": "@capaj/pluralize",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pluralize and singularize any word",
   "source": "src/pluralize.ts",
+  "type": "module",
   "exports": "./dist/pluralize.modern.js",
   "main": "./dist/pluralize.cjs",
   "module": "./dist/pluralize.module.js",
