@@ -1,7 +1,7 @@
 /* global describe, it */
 
-import { expect } from 'chai';
-import { pluralize } from './pluralize';
+const expect = require('chai').expect;
+const pluralize = require('./pluralize').pluralize;
 
 /**
  * Standard singular/plural matches.

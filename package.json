@@ -5,7 +5,6 @@
   "source": "src/pluralize.ts",
   "types": "dist/pluralize.d.ts",
   "type": "module",
-  "exports": "./dist/pluralize.modern.js",
   "main": "./dist/pluralize.cjs",
   "module": "./dist/pluralize.module.js",
   "unpkg": "./dist/pluralize.umd.js",
@@ -16,7 +15,7 @@
   ],
   "scripts": {
     "test-spec": "mocha -R spec --bail",
-    "test-cov": "istanbul cover node_modules/ts-mocha/bin/ts-mocha -- -R spec --bail",
+    "test-cov": "istanbul cover node_modules/ts-mocha/bin/ts-mocha -- src/test.cjs -R spec --bail",
     "test": "npm run test-cov",
     "build": "microbundle",
     "prepare": "npm run build"
