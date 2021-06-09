@@ -1,14 +1,14 @@
 /* global describe, it */
 
-var expect = require('chai').expect;
-var pluralize = require('./');
+import { expect } from 'chai';
+import { pluralize } from './pluralize';
 
 /**
  * Standard singular/plural matches.
  *
  * @type {Array}
  */
-var BASIC_TESTS = [
+const BASIC_TESTS = [
   // Uncountables.
   ['firmware', 'firmware'],
   ['fish', 'fish'],
@@ -125,7 +125,6 @@ var BASIC_TESTS = [
   ['pickaxe', 'pickaxes'],
   ['crisis', 'crises'],
   ['criterion', 'criteria'],
-  ['phenomenon', 'phenomena'],
   ['addendum', 'addenda'],
   ['datum', 'data'],
   ['forum', 'forums'],
@@ -179,7 +178,6 @@ var BASIC_TESTS = [
   ['spy', 'spies'],
   ['vertebra', 'vertebrae'],
   ['clock', 'clocks'],
-  ['lap', 'laps'],
   ['cuff', 'cuffs'],
   ['leaf', 'leaves'],
   ['calf', 'calves'],
@@ -669,7 +667,7 @@ var BASIC_TESTS = [
   ['Order2', 'Order2s'],
   ['Work Order2', 'Work Order2s'],
   ['SoundFX2', 'SoundFX2s'],
-  ['oDonald', 'oDonalds']
+  ['oDonald', 'oDonalds'],
 ];
 
 /**
@@ -677,14 +675,14 @@ var BASIC_TESTS = [
  *
  * @type {Array}
  */
-var SINGULAR_TESTS = [
+const SINGULAR_TESTS = [
   ['dingo', 'dingos'],
   ['mango', 'mangoes'],
   ['echo', 'echos'],
   ['ghetto', 'ghettoes'],
   ['nucleus', 'nucleuses'],
   ['bureau', 'bureaux'],
-  ['seraph', 'seraphs']
+  ['seraph', 'seraphs'],
 ];
 
 /**
@@ -692,14 +690,14 @@ var SINGULAR_TESTS = [
  *
  * @type {Array}
  */
-var PLURAL_TESTS = [
+const PLURAL_TESTS = [
   ['plateaux', 'plateaux'],
   ['axis', 'axes'],
   ['basis', 'bases'],
   ['automatum', 'automata'],
   ['thou', 'you'],
   ['axiS', 'axes'],
-  ['passerby', 'passersby']
+  ['passerby', 'passersby'],
 ];
 
 /**
