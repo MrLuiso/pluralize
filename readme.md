@@ -9,7 +9,7 @@
 
 > Pluralize and singularize any word.
 
-This was forked from https://github.com/plurals/pluralize.
+This was forked from https://github.com/capaj/pluralize which is a fork of https://github.com/plurals/pluralize.
 It was refactored into TS and there is now a build step added. Everything else remains the same.
 
 ## Installation
