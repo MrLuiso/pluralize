@@ -22,7 +22,7 @@ yarn add pluralize
 ### Node (ES2015 Module)
 
 ```javascript
-import pluralize from 'pluralize';
+import { pluralize } from 'pluralize';
 ```
 
 ### Node
